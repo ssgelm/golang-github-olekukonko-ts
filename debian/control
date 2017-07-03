@@ -1,0 +1,38 @@
+Source: golang-github-olekukonko-ts
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Stephen Gelman <ssgelm@gmail.com>
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any
+Standards-Version: 3.9.8
+Homepage: https://github.com/olekukonko/ts
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-olekukonko-ts.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-olekukonko-ts.git
+XS-Go-Import-Path: github.com/olekukonko/ts
+
+Package: golang-github-olekukonko-ts-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Simple go Application to get Terminal Size
+ ts (Terminal Size) Build Status (https://travis-ci.org/olekukonko/ts)
+ Total views (https://sourcegraph.com/github.com/olekukonko/ts)
+ .
+ Simple go Application to get Terminal Size. So Many Implementations
+ do not support windows but ts has full windows support.  Run go get
+ github.com/olekukonko/ts to download and install Example ```go package
+ main
+ .
+ import (
+     "fmt" "github.com/olekukonko/ts"
+ )
+ .
+ func main() {
+     size, _ := ts.GetSize() fmt.Println(size.Col())  // Get Width
+     fmt.Println(size.Row())  // Get Height fmt.Println(size.PosX()) //
+     Get X position fmt.Println(size.PosY()) // Get Y position
+ } ```
+ .
+ See Documentation (http://godoc.org/github.com/olekukonko/ts)
