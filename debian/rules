@@ -2,3 +2,7 @@
 
 %:
 	dh $@ --buildsystem=golang --with=golang
+
+override_dh_auto_test:
+	# These tests will never pass - they rely on stdout being untouched and
+	# go test modifies it
