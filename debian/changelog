@@ -1,5 +1,5 @@
-golang-github-olekukonko-ts (0.0~git20140412.0.ecf753e-1) UNRELEASED; urgency=medium
+golang-github-olekukonko-ts (0.0~git20140412.0.ecf753e-1) unstable; urgency=medium
 
-  * Initial release (Closes: TODO)
+  * Initial release (Closes: #869526)
 
  -- Stephen Gelman <ssgelm@gmail.com>  Mon, 03 Jul 2017 04:26:23 +0000
